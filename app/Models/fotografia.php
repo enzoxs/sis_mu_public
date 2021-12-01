@@ -19,4 +19,6 @@ class fotografia extends Model
         return $this->belongsTo(recinto_deportivo::class);
     }
 
+
+
 }
