@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class usuario_admin extends Model
 {
+    public $table = "usuario_admin";
     use HasFactory;
 
     protected $fillable=[
@@ -25,7 +26,7 @@ class usuario_admin extends Model
      */
 
     public function tipo_usuario(){
-        return $this -> belongsTo(tipo_usuario::class);
+        return $this -> belongsTo(tipo_usuario::class,'ID_TIPO_USUARIO');
     }
     // Revisar cuando se cree la clase del modelo horario
     public function horario()

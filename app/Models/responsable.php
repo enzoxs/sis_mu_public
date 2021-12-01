@@ -21,5 +21,4 @@ class responsable extends Model
         return $this->belongsTo(recinto_deportivo::class);
     }
 
-
 }
