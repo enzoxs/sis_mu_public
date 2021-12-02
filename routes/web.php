@@ -29,6 +29,7 @@ Route::get('/', function () {
     foreach ($usu_ad as $usuario_admin){
         echo $usuario_admin -> USERNAME_USUARIO_AD ."<br/>";
         echo $usuario_admin->tipo_usuario->ID_TIPO_USUARIO;
+        echo $usuario_admin->tipo_usuario->NOMBRE_TIPO_USUARIO;
 
         echo "<hr/>";
     }

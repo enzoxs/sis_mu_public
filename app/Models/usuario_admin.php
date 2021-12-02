@@ -8,6 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class usuario_admin extends Model
 {
     public $table = "usuario_admin";
+    protected $primaryKey = 'ID_USUARIO_AD';
+
     use HasFactory;
 
     protected $fillable=[

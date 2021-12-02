@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class tipo_usuario extends Model
 {
     public $table = "tipo_usuario";
+    protected $primaryKey = 'ID_TIPO_USUARIO';
     use HasFactory;
 
     protected $fillable=[
